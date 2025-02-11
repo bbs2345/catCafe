@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<c:set value="${pageContext.request.contextPath}" var="contextPath" />    
+    
 <!DOCTYPE html>
 
 <html lang="en">
@@ -29,6 +33,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!--지도 부트스트랩 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=map" />
 
   <!-- =======================================================
   * Template Name: Delicious
@@ -41,63 +48,7 @@
 
 <body class="index-page">
 
-  <header id="header" class="header fixed-top">
-
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-end justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-phone d-flex align-items-center d-none d-lg-block"><span>+1 5589 55488 55</span></i>
-          <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
-        </div>
-        <a href="#book-a-table" class="cta-btn">Booka a table</a>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-cente">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Delicious</h1>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#specials">Specials</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#chefs">Chefs</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-      </div>
-
-    </div>
-
-  </header>
+<%@ include file="part/header.jsp" %>
 
   <main class="main">
 
@@ -109,6 +60,7 @@
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
           <div class="carousel-container">
+          
             <h2><span>Delicious</span> Restaurant</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div>
@@ -155,7 +107,7 @@
       </div>
 
     </section><!-- /Hero Section -->
-
+<!-- ======================================================= -->
     <!-- About Section -->
     <section id="about" class="about section light-background">
 
@@ -585,22 +537,22 @@
             <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="성명" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="이메일" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="전화번호" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
+                  <input type="date" name="date" class="form-control" id="date" placeholder="예약 날짜" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
+                  <input type="time" class="form-control" name="time" id="time" placeholder="예약시간" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# 인원" required="">
                 </div>
               </div>
 
@@ -611,8 +563,8 @@
               <div class="text-center mt-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-                <button type="submit">Book a Table</button>
+                <div class="sent-message">예약 요청이 전송되었습니다. 예약 확인을 위해 전화나 이메일로 연락드리겠습니다. 감사합니다!</div>
+                <button type="submit">예약하기</button>
               </div>
             </form>
           </div><!-- End Reservation Form -->
@@ -628,8 +580,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <div><span>Some photos from</span> <span class="description-title">Our Restaurant</span></div>
+        <h2>갤러리</h2>
+        <div><span>냥냥카페</span> <span class="description-title">갤러리</span></div>
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -638,64 +590,64 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-11.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-11.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-12.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-12.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-13.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-13.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-14.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-14.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-15.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-15.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-16.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-16.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-17.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-17.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-18.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-18.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -711,8 +663,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Chefs</h2>
-        <div><span>Our Professional</span> <span class="description-title">Chefs</span></div>
+        <h2>주방장</h2>
+        <div><span class="description-title">주방장</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -721,10 +673,10 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/chefs/chefs-11.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
+                <h4>말광냥이</h4>
+                <span>총주방장</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -737,10 +689,10 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/chefs/chefs-12.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Patissier</span>
+                <h4>조냥단</h4>
+                <span>부주방장</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -753,10 +705,10 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/chefs/chefs-13.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cook</span>
+                <h4>시크냥</h4>
+                <span>요리사</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -891,12 +843,17 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
+        <h2>문의사항</h2>
+        <div><span class="description-title">문의하기</span></div>
       </div><!-- End Section Title -->
 
       <div class="mb-5">
-        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+  <iframe 
+    style="width: 100%; height: 400px;" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.517192417229!2d126.849538!3d37.550978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d2ea6b6c4d1%3A0x5e1c0a17a2a5fdc!2z7ISc7Jq47Yq567OE7IucIOyVhOuqqCDsoJXroZwzMDI!5e0!3m2!1sko!2skr!4v1707654321000" 
+    frameborder="0" 
+    allowfullscreen="">
+  </iframe>
       </div><!-- End Google Maps -->
 
       <div class="container" data-aos="fade">
@@ -906,21 +863,20 @@
           <div class="col-lg-4">
 
             <div class="info">
-              <h3>Get in touch</h3>
-              <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
-
+              <h3>문의사항</h3>
+              <p>고양이 카페 방문 및 예약 관련 문의. <br>입장료 및 이용 시간 문의.<br>카페 내 시설 및 서비스 문의.<br>카페 관련 피드백 및 제안.</p>
               <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h4>위치</h4>
+                  <p>서울 강서구 화곡로 302 강서구청</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h4>Email:</h4>
+                  <h4>이메일</h4>
                   <p>info@example.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -928,8 +884,8 @@
               <div class="info-item d-flex">
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <h4>전화번호</h4>
+                  <p>02-2222-3333</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -941,17 +897,17 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="성명" required="">
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="이메일" required="">
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="연락처" required="">
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
+                <textarea class="form-control" name="message" placeholder="상세 내용" required=""></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -970,68 +926,7 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Delicious</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  <%@ include file="part/footer.jsp" %>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
