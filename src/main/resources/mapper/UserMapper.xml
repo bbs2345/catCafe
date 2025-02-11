@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.mbc.repository.UserRepository">
+    
+    <select id="findById" resultType="kr.co.mbc.entity.UserEntity">
+        SELECT * FROM tbl_user WHERE id = #{id}
+    </select>
+
+    <select id="findAll" resultType="kr.co.mbc.entity.UserEntity">
+        SELECT * FROM tbl_user
+    </select>
+
+    <insert id="save" useGeneratedKeys="true" keyColumn="uno" keyProperty="uno">
+        INSERT INTO tbl_user (uno, username, password, name, email, phone, role) VALUES (seq_uno.NEXTVAL, #{username}, #{password}, #{name}, #{email}, #{phone}, #{role})
+    </insert>
+    </mapper>
