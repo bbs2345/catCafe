@@ -112,7 +112,6 @@
     <section id="about" class="about section light-background">
 
       <div class="container">
-
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
