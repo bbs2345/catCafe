@@ -1,0 +1,67 @@
+/* Hero Section */
+#hero {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 100vh; /* 화면의 100% 높이로 설정 */
+}
+
+/* 폼 오버레이 */
+.joinForm-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.5); /* 밝은 배경과 높은 투명도 */
+	padding: 40px;
+	border-radius: 12px; /* 둥근 모서리 */
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* 더 부드럽고 깊은 그림자 */
+	width: 100%;
+	max-width: 600px; /* 최대 너비 확장 */
+	z-index: 10;
+	transition: all 0.3s ease-in-out; /* 부드러운 애니메이션 효과 */
+}
+
+/* 폼 오버레이에 호버 효과 추가 */
+.joinForm-overlay:hover {
+	transform: translate(-50%, -50%) scale(1.02); /* 살짝 확대 효과 */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* 그림자 더 강조 */
+}
+
+/* 폼 내 입력 필드 스타일 */
+.joinForm-overlay input, .joinForm-overlay textarea {
+	width: 100%;
+	padding: 14px;
+	margin: 10px 0;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: border-color 0.3s ease-in-out;
+}
+
+/* 입력 필드 포커스 효과 */
+.joinForm-overlay input:focus, .joinForm-overlay textarea:focus {
+	border-color: #ff6347; /* 주황색 포커스 효과 */
+	outline: none; /* 포커스 시 아웃라인 제거 */
+}
+
+/* 입력 필드 호버 효과 */
+.joinForm-overlay input:hover, .joinForm-overlay textarea:hover {
+	border-color: #ff6347; /* 주황색 호버 효과 */
+}
+/* 버튼 스타일 */
+.joinForm-overlay #joinForm-btn {
+	color: var(--contrast-color);
+	background: var(--accent-color);
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 6px 30px 8px 30px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.joinForm-overlay #joinForm-btn:hover {
+	background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
