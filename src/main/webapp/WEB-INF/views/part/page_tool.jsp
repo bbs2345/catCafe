@@ -35,7 +35,7 @@
 	<style>
 	/* 이미지가 Hero 위로 오지 않도록 하기 위해 z-index 설정 */
 	.carousel-item img {
-		z-index: -1; /* 이미지가 배경으로만 표시되도록 설정 */
+		z-index: -1 !important; /* 이미지가 배경으로만 표시되도록 설정 */
 	}
 	</style>
 </head>
