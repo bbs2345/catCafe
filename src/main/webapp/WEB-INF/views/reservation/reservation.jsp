@@ -9,12 +9,13 @@
 <title>로그인</title>
 <!-- Main CSS File -->
 <link href="${contextPath}/assets/css/main.css" rel="stylesheet">
-<link href="${contextPath}/assets/css/auth.css" rel="stylesheet">
+<link href="${contextPath}/assets/css/reservation.css" rel="stylesheet">
 </head>
 <body>
 	<%@ include file="../part/page_tool.jsp"%>
 
 	<!-- Book A Table Section -->
+	    <div class="reservation-overlay">
 	<section id="book-a-table" class="book-a-table section">
 
 		<!-- Section Title -->
@@ -27,12 +28,9 @@
 		<!-- End Section Title -->
 
 		<div class="container">
-
 			<div class="row g-0" data-aos="fade-up" data-aos-delay="100">
-
 				<div class="col-lg-4 reservation-img"
 					style="background-image: url(assets/img/reservation.jpg);"></div>
-
 				<div class="col-lg-8 d-flex align-items-center reservation-form-bg"
 					data-aos="fade-up" data-aos-delay="200">
 					<form action="forms/book-a-table.php" method="post" role="form"
@@ -63,12 +61,10 @@
 									id="people" placeholder="# 인원" required="">
 							</div>
 						</div>
-
 						<div class="form-group mt-3">
 							<textarea class="form-control" name="message" rows="5"
 								placeholder="Message"></textarea>
 						</div>
-
 						<div class="text-center mt-3">
 							<div class="loading">Loading</div>
 							<div class="error-message"></div>
@@ -79,12 +75,11 @@
 					</form>
 				</div>
 				<!-- End Reservation Form -->
-
+				
 			</div>
-
 		</div>
-
 	</section>
 	<!-- /Book A Table Section -->
+	
 </body>
 </html>

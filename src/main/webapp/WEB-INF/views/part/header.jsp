@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-    <c:set value="${pageContext.request.contextPath}" var="contextPath" />    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<c:set value="${pageContext.request.contextPath}" var="contextPath" />
+<c:set value="${pageContext.request.requestURI}" var="path"/>
 <!DOCTYPE html>
   <header id="header" class="header fixed-top">
 
@@ -23,14 +24,13 @@
 			<a class="cta-btn" href="${contextPath}/user/read/${user.username}">회원정보</a>
 		</c:if>
 		<c:choose>
-		    <c:when test='${pageContext.request.requestURI eq "/catCafe/index"}'>
+		    <c:when test='${path eq "/catCafe/WEB-INF/views/index.jsp"}'>
 		        <a href="#book-a-table" class="cta-btn">예약</a>
 		    </c:when>
 		    <c:otherwise>
-		        <a href="${pageContext.request.contextPath}/reservation" class="cta-btn">예약</a>
+		        <a href="${contextPath}/reservation" class="cta-btn">예약</a>
 		    </c:otherwise>
 		</c:choose>
-
         </div>
       </div>
     </div><!-- End Top Bar -->
