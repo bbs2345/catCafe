@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     <c:set value="${pageContext.request.contextPath}" var="contextPath" />    
 <!DOCTYPE html>
   <header id="header" class="header fixed-top">
@@ -20,7 +22,15 @@
 			<a class="cta-btn" href="${contextPath}/auth/logout">로그아웃</a>
 			<a class="cta-btn" href="${contextPath}/user/read/${user.username}">회원정보</a>
 		</c:if>
-        <a href="#book-a-table" class="cta-btn">예약</a>
+		<c:choose>
+		    <c:when test='${pageContext.request.requestURI eq "/catCafe/index"}'>
+		        <a href="#book-a-table" class="cta-btn">예약</a>
+		    </c:when>
+		    <c:otherwise>
+		        <a href="${pageContext.request.contextPath}/reservation" class="cta-btn">예약</a>
+		    </c:otherwise>
+		</c:choose>
+
         </div>
       </div>
     </div><!-- End Top Bar -->

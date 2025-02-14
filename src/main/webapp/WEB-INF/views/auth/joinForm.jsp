@@ -10,12 +10,13 @@
   <link href="../assets/css/main.css" rel="stylesheet">
   <link href="../assets/css/auth.css" rel="stylesheet">
 </head>
-<body class="index-page">
+<body>
 
 <%@ include file="../part/page_tool.jsp" %>
 
     <!-- joinForm-overlay -->
     <div class="joinForm-overlay">
+        <h2 class="join-title">회원가입</h2>
         <form action="${contextPath}/auth/save" method="post">
             <div>
                 아이디 : <input name="username">
@@ -33,7 +34,7 @@
                 전화번호 : <input name="phone">
             </div>
             <div>
-                <button id="joinForm-btn">등록</button>
+                <button type="submit" id="joinForm-btn">등록</button>
             </div>
         </form>
     </div>
