@@ -117,6 +117,7 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
           </div>
+          
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="fst-italic">

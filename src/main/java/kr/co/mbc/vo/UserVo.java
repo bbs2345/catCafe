@@ -1,19 +1,21 @@
-package kr.co.mbc.entity;
+package kr.co.mbc.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Builder
-public class UserEntity {
+@ToString
+public class UserVo {
 
-	private Long uno; // 유저넘버
+	private Long id; // 유저넘버
 	
 	private String username; // 유저네임
 	
