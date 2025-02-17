@@ -984,52 +984,6 @@ section,
   top: calc(50% - 47px);
 }
 
-/*--------------------------------------------------------------
-# Why Us Section
---------------------------------------------------------------*/
-.why-us .card-item {
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
-  padding: 50px 30px;
-  transition: all ease-in-out 0.3s;
-  height: 100%;
-  position: relative;
-}
-
-.why-us .card-item span {
-  color: var(--accent-color);
-  display: block;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.why-us .card-item h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.why-us .card-item h4 a {
-  color: var(--heading-color);
-}
-
-.why-us .card-item p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin: 0;
-  padding: 0;
-}
-
-.why-us .card-item:hover {
-  background: var(--accent-color);
-  padding: 30px 30px 70px 30px;
-}
-
-.why-us .card-item:hover span,
-.why-us .card-item:hover h4 a,
-.why-us .card-item:hover p {
-  color: var(--contrast-color);
-}
 
 /*--------------------------------------------------------------
 # Menu Section
@@ -1124,68 +1078,6 @@ section,
   font-size: 14px;
   font-family: var(--nav-font);
   color: color-mix(in srgb, var(--default-color), transparent 50%);
-}
-
-/*--------------------------------------------------------------
-# Specials Section
---------------------------------------------------------------*/
-.specials {
-  overflow: hidden;
-}
-
-.specials .nav-tabs {
-  border: 0;
-}
-
-.specials .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: var(--default-color);
-  border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.specials .nav-link:hover {
-  color: var(--accent-color);
-}
-
-.specials .nav-link.active {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-color: var(--background-color);
-}
-
-.specials .tab-pane.active {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.specials .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.specials .details p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.specials .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .specials .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .specials .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
-  }
 }
 
 /*--------------------------------------------------------------
