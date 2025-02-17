@@ -140,49 +140,7 @@
 
     </section><!-- /About Section -->
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="why-us section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Why Us</h2>
-        <div><span>Why choose</span> <span class="description-title">Our Restaurant</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <span>01</span>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div><!-- Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <span>02</span>
-              <h4><a href="" class="stretched-link">Repellat Nihil</a></h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div><!-- Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <span>03</span>
-              <h4><a href="" class="stretched-link">Ad ad velit qui</a></h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div><!-- Card Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Why Us Section -->
-
+   
     <!-- Menu Section -->
     <section id="menu" class="menu section">
 
@@ -303,106 +261,7 @@
 
     </section><!-- /Menu Section -->
 
-    <!-- Specials Section -->
-    <section id="specials" class="specials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Specials</h2>
-        <div><span>Check Our</span> <span class="description-title">Specials</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Modi sit est</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Unde praesentium sed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Pariatur explicabo vel</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Nostrum qui quasi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Iusto ut expedita aut</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="specials-tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Specials Section -->
+   
 
     <!-- Events Section -->
     <section id="events" class="events section">
@@ -518,64 +377,87 @@
 
     </section><!-- /Events Section -->
 
-    <!-- Book A Table Section -->
-    <section id="book-a-table" class="book-a-table section">
+	<!-- Book A Table Section -->
+	<section id="book-a-table" class="book-a-table section">
+	
+		<!-- Section Title -->
+		<div class="container section-title" data-aos="fade-up">
+			<h2>Book A Table</h2>
+			<div>
+				<span>Book a</span> <span class="description-title">Table</span>
+			</div>
+		</div>
+		<!-- End Section Title -->
+	
+		<div class="container">
+	
+			<div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+	
+				<div class="col-lg-4 reservation-img"
+					style="background-image: url(assets/img/reservation.jpg);"></div>
+	
+				<div class="col-lg-8 d-flex align-items-center reservation-form-bg"
+					data-aos="fade-up" data-aos-delay="200">
+					<form action="forms/book-a-table.php" method="post" role="form"
+						class="php-email-form">
+						<div class="row gy-4">
+							<div class="col-lg-4 col-md-6">
+								<input type="text" name="name" class="form-control" id="name"
+									placeholder="성명" required="">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="text" class="form-control" name="phone" id="phone"
+									placeholder="전화번호" required="">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="number" class="form-control" name="people"
+									id="people" placeholder="# 인원" required="">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="date" name="date" class="form-control" id="date"
+									placeholder="예약 날짜" required="">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="time" class="form-control" name="time" id="time"
+									placeholder="예약시작시간" required="">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="time" class="form-control" name="time" id="time"
+									placeholder="예약종료시간" required="">
+							</div>
+							<div class="col-lg-4 col-md-6">
+							<input type="time" class="form-control" name="time" id="time"
+       value="예약시작시간" onfocus="this.value=''" onblur="if(this.value==''){this.value='--:--'}"
+       required></div>
+       
+							
+	
+						</div>
+	
+						<div class="form-group mt-3">
+							<textarea class="form-control" name="message" rows="5"
+								placeholder="Message"></textarea>
+						</div>
+	
+						<div class="text-center mt-3">
+							<div class="loading">Loading</div>
+							<div class="error-message"></div>
+							<div class="sent-message">예약 요청이 전송되었습니다. 예약 확인을 위해 전화나
+								이메일로 연락드리겠습니다. 감사합니다!</div>
+							<button type="submit">예약하기</button>
+						</div>
+					</form>
+				</div>
+				<!-- End Reservation Form -->
+	
+			</div>
+	
+		</div>
+	
+	</section>
+	<!-- /Book A Table Section -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Book A Table</h2>
-        <div><span>Book a</span> <span class="description-title">Table</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
-
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="성명" required="">
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="이메일" required="">
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="전화번호" required="">
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="date" name="date" class="form-control" id="date" placeholder="예약 날짜" required="">
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="time" class="form-control" name="time" id="time" placeholder="예약시간" required="">
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# 인원" required="">
-                </div>
-              </div>
-
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-              </div>
-
-              <div class="text-center mt-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">예약 요청이 전송되었습니다. 예약 확인을 위해 전화나 이메일로 연락드리겠습니다. 감사합니다!</div>
-                <button type="submit">예약하기</button>
-              </div>
-            </form>
-          </div><!-- End Reservation Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Book A Table Section -->
-
-    <!-- Gallery Section -->
+		<!-- Gallery Section -->
     <section id="gallery" class="gallery section">
 
       <!-- Section Title -->

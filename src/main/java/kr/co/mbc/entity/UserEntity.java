@@ -1,5 +1,7 @@
-package kr.co.mbc.vo;
+package kr.co.mbc.entity;
 
+import kr.co.mbc.dto.UserForm;
+import kr.co.mbc.dto.UserResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,20 +15,21 @@ import lombok.ToString;
 @Setter
 @Builder
 @ToString
-public class UserVo {
+public class UserEntity {
 
 	private Long id; // 유저넘버
-	
+
 	private String username; // 유저네임
-	
+
 	private String password; // 패스워드
-	
+
 	private String name; // 네임
-	
+
 	private String email; // 이메일
-	
+
 	private String phone; // 전화번호
 	
 	private String role; // 등급
 
+	
 }
