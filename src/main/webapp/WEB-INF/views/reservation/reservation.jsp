@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인</title>
+<title>예약</title>
 <!-- Main CSS File -->
 <link href="${contextPath}/assets/css/main.css" rel="stylesheet">
 <link href="${contextPath}/assets/css/reservation.css" rel="stylesheet">

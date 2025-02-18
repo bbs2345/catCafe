@@ -35,11 +35,14 @@
 
 		<!--dependency
       추가 시작-->
-      
-<!--
-	
-	
-		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+
+<!--https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -54,14 +57,14 @@
 	
 
 
-		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.4</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/lib/ojdbc6.jar</systemPath>
-		</dependency>
+<!--		 https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
+<!--		<dependency>-->
+<!--			<groupId>com.oracle</groupId>-->
+<!--			<artifactId>ojdbc6</artifactId>-->
+<!--			<version>11.2.0.4</version>-->
+<!--			<scope>system</scope>-->
+<!--			<systemPath>${project.basedir}/src/main/resources/lib/ojdbc6.jar</systemPath>-->
+<!--		</dependency>-->
 
 
 		<dependency>
@@ -114,6 +117,7 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
+
 
 		<!--dependency
       추가 끝-->
