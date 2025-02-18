@@ -19,9 +19,11 @@ public class AdminController {
 	private final UserService userService;
 	// 회원목록
 	@GetMapping("/list")
-	public void list(Model model) {
+	public String list(Model model) {
 		List<UserEntity> list = userService.findAll();
 		
 		model.addAttribute("list", list);
+		
+		return "admin/list";
 	}
 }

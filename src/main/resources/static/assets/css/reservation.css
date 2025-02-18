@@ -6,12 +6,12 @@
 }
 
 /* Book A Table 섹션을 Hero 섹션의 중간에 배치 */
-.admin_userList {
+#book-a-table {
   position: absolute;
   top: 50%; /* Hero 섹션의 중간에 배치 */
   left: 50%;
   transform: translate(-50%, -50%); /* 세로, 수평으로 가운데 정렬 */
-  width: 80%;
+  width: 70%;
   background-color: rgba(255, 255, 255, 0.5); /* 배경을 반투명하게 설정 */
   padding: 30px 0;
   z-index: 2; /* 다른 요소들 위에 표시되도록 설정 */
