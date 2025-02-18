@@ -9,7 +9,7 @@
 <title>리스트</title>
 <!-- Main CSS File -->
 <link href="${contextPath}/assets/css/main.css" rel="stylesheet">
-<link href="${contextPath}/assets/css/reservation.css" rel="stylesheet">
+<link href="${contextPath}/assets/css/admin.css" rel="stylesheet">
 </head>
 <body>
 	<%@ include file="../part/page_tool.jsp"%>
@@ -35,7 +35,7 @@
 				<c:forEach items="${list}" var="dto" varStatus="status">
 					<tr>
 						<td>${dto.id}</td>
-						<td><a href="${dto.username}">${dto.username}</a></td>
+						<td><a href="${contextPath}/user/read/${dto.username}">${dto.username}</a></td>
 						<td>${dto.name}</td>
 						<td>${dto.email}</td>
 						<td>${dto.phone}</td>

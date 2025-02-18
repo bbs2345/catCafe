@@ -6,7 +6,7 @@
 }
 
 /* Book A Table 섹션을 Hero 섹션의 중간에 배치 */
-.admin_userList {
+.userRead {
   position: absolute;
   top: 50%; /* Hero 섹션의 중간에 배치 */
   left: 50%;

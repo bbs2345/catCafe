@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import kr.co.mbc.dto.UserResponse;
 import kr.co.mbc.entity.UserEntity;
 import kr.co.mbc.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -21,12 +22,14 @@ public class UserController {
 	
 	private final UserService userService;
 	
+	
+	//유저상세보기
 	@GetMapping("/read/{username}")
 	public String read(@PathVariable("username") String username,
 												Model model) {
-		UserEntity user = userService.findByUsername(username);
-		
-		model.addAttribute("user", user);
+		UserEntity userEntity = userService.findByUsername(username);
+		UserResponse userResponse = UserEntity.toUserResponse(userEntity);
+		model.addAttribute("userResponse", userResponse);
 		
 		return "user/read";
 	}
