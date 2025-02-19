@@ -14,3 +14,5 @@ create table tbl_user(
 create sequence seq_id;
 
 select * from tbl_user where username='m001';
+
+select * from user_entity;
