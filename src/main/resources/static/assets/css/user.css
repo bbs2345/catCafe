@@ -15,7 +15,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: rgba(255, 255, 255, 0.9); /* 밝은 배경과 높은 투명도 */
+	background: rgba(255, 255, 255, 0.7); /* 밝은 배경과 높은 투명도 */
 	padding: 40px;
 	border-radius: 12px; /* 둥근 모서리 */
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* 더 부드럽고 깊은 그림자 */
@@ -26,21 +26,23 @@
 }
 
 /* 버튼 스타일 */
-.userReadBtn a{
-	color: var(--contrast-color);
-	background: var(--accent-color);
-	font-weight: 500;
-	font-size: 14px;
-	letter-spacing: 1px;
-	display: inline-block;
-	padding: 6px 30px 8px 30px;
-	border-radius: 50px;
-	transition: 0.3s;
+.userReadBtn a {
+    color: var(--contrast-color); /* 글자 색상 유지 */
+    background: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 6px 30px 8px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
-.userReadBtn a, .userReadBtn a:hover{
-	background: color-mix(in srgb, var(--accent-color), transparent 20%);
+.userReadBtn a:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--contrast-color); /* :hover 상태에서도 글자 색상 유지 */
 }
+
 
 /* 유저리드 줄간격 */
 .userRead-info {
