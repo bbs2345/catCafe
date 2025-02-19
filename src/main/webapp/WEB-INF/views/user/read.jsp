@@ -135,7 +135,13 @@
     		type: "post",
     		data : map,
     		success:function(result){
-    			
+    			 $(".updateBefor_btn").show();
+                 $(".updateAfter_btn").hide();
+                 $(".useUpdateForm").find(".form-control").attr("class", "form-control-plaintext").attr("readonly", true);
+                 $(".useUpdateForm").find("input").each(function(){
+                     $(this).attr("data-org-val", $(this).val());
+                 });
+                 alert("회원정보가 수정되었습니다.");
     		}
     	});
     });
