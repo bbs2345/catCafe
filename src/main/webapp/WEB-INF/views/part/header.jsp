@@ -14,6 +14,8 @@
           <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>월요일-토요일: 11:00 AM - 23:00 PM</span></i>
         </div>
         <div>
+        <a class="cta-btn" href="${contextPath}/admin/list">회원목록</a>
+        <a class="cta-btn" href="${contextPath}/admin/home">관리자화면</a>
 		<c:if test="${empty user}">
 			<a class="cta-btn" href="${contextPath}/auth/loginForm">로그인</a>
 			<a class="cta-btn" href="${contextPath}/auth/joinForm">회원가입</a>

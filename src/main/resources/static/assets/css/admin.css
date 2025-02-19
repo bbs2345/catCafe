@@ -1,3 +1,4 @@
+
 /* Hero Section */
 #hero {
   position: relative; /* Hero 섹션을 기준으로 #book-a-table을 배치하도록 설정 */
@@ -5,14 +6,41 @@
   height: 100vh; /* Hero 섹션의 높이를 화면 전체로 설정 */
 }
 
-/* Book A Table 섹션을 Hero 섹션의 중간에 배치 */
+/* 폼 오버레이 */
 .admin_userList {
-  position: absolute;
-  top: 50%; /* Hero 섹션의 중간에 배치 */
-  left: 50%;
-  transform: translate(-50%, -50%); /* 세로, 수평으로 가운데 정렬 */
-  width: 70%;
-  background-color: rgba(255, 255, 255, 0.5); /* 배경을 반투명하게 설정 */
-  padding: 30px 0;
-  z-index: 2; /* 다른 요소들 위에 표시되도록 설정 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.5); /* 밝은 배경과 높은 투명도 */
+	padding: 40px;
+	border-radius: 12px; /* 둥근 모서리 */
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* 더 부드럽고 깊은 그림자 */
+	width: 100%;
+	max-width: 600px; /* 최대 너비 확장 */
+	z-index: 10;
+	transition: all 0.3s ease-in-out; /* 부드러운 애니메이션 효과 */
+}
+
+/* 폼 오버레이에 호버 효과 추가 */
+.joinForm-overlay:hover, .loginForm-overlay:hover {
+	transform: translate(-50%, -50%) scale(1.02); /* 살짝 확대 효과 */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* 그림자 더 강조 */
+}
+
+/* 버튼 스타일 */
+.userReadBtn a{
+	color: var(--contrast-color);
+	background: var(--accent-color);
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 6px 30px 8px 30px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.userReadBtn a .userReadBtn a:hover{
+	background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }

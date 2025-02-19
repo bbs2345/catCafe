@@ -1,18 +1,62 @@
 /* Hero Section */
+/* Hero Section */
 #hero {
-  position: relative; /* Hero 섹션을 기준으로 #book-a-table을 배치하도록 설정 */
+  position: relative; /* Hero 섹션을 기준으로 배치 */
   overflow: hidden;
   height: 100vh; /* Hero 섹션의 높이를 화면 전체로 설정 */
+  z-index: 1; /* 낮은 z-index 설정 */
 }
 
-/* Book A Table 섹션을 Hero 섹션의 중간에 배치 */
-.userRead {
-  position: absolute;
-  top: 50%; /* Hero 섹션의 중간에 배치 */
-  left: 50%;
-  transform: translate(-50%, -50%); /* 세로, 수평으로 가운데 정렬 */
-  width: 70%;
-  background-color: rgba(255, 255, 255, 0.5); /* 배경을 반투명하게 설정 */
-  padding: 30px 0;
-  z-index: 2; /* 다른 요소들 위에 표시되도록 설정 */
+
+/* 유저 자세히보기 */
+/* 폼 오버레이 */
+.userRead, .update-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.9); /* 밝은 배경과 높은 투명도 */
+	padding: 40px;
+	border-radius: 12px; /* 둥근 모서리 */
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* 더 부드럽고 깊은 그림자 */
+	width: 100%;
+	max-width: 600px; /* 최대 너비 확장 */
+	z-index: 100;
+	transition: all 0.3s ease-in-out; /* 부드러운 애니메이션 효과 */
 }
+
+/* 버튼 스타일 */
+.userReadBtn a{
+	color: var(--contrast-color);
+	background: var(--accent-color);
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 6px 30px 8px 30px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.userReadBtn a, .userReadBtn a:hover{
+	background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/* 유저리드 줄간격 */
+.userRead-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.userRead-info-item {
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;  /* 실선 */
+    margin-bottom: 10px;  /* 항목 사이 간격 */
+}
+
+/* .userRead-info-item:last-child { */
+/*     border-bottom: none;  마지막 항목은 실선이 없어지게 함 */
+/* } */
+
+
+

@@ -26,4 +26,29 @@ public class AdminController {
 		
 		return "admin/list";
 	}
+	
+	@GetMapping("/home")
+	public String home() {
+		return "admin/home";
+	}
+	
+	@GetMapping("/charts")
+	public String charts() {
+		return "admin/charts";
+	}
+	
+	@GetMapping("/layout-sidenav-light")
+	public String layout_sidenav_light() {
+		return "admin/layout-sidenav-light";
+	}
+	
+	@GetMapping("/layout-static")
+	public String layout_static() {
+		return "admin/layout-static";
+	}
+	
+	@GetMapping("/tables")
+	public String tables() {
+		return "admin/tables";
+	}
 }
