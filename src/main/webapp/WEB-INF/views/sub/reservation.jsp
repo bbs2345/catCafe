@@ -9,13 +9,13 @@
 <title>예약</title>
 <!-- Main CSS File -->
 <link href="${contextPath}/assets/css/main.css" rel="stylesheet">
-<link href="${contextPath}/assets/css/reservation.css" rel="stylesheet">
+<link href="${contextPath}/assets/css/sub.css" rel="stylesheet">
 </head>
 <body>
 	<%@ include file="../part/page_tool.jsp"%>
 
 	<!-- Book A Table Section -->
-	    <div class="reservation-overlay">
+	    <div class="reservation-overlay"></div>
 	<section id="book-a-table" class="book-a-table section">
 
 		<!-- Section Title -->
