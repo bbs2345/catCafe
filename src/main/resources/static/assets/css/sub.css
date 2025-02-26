@@ -20,7 +20,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%); /* 세로, 수평으로 가운데 정렬 */
   width: 70%;
-  background-color: rgba(255, 255, 255, 0.5); /* 배경을 반투명하게 설정 */
+  background-color: rgba(255, 255, 255, 1); /* 배경을 반투명하게 설정 */
   padding: 30px 0;
   z-index: 7; /* 다른 요소들 위에 표시되도록 설정 */
 }

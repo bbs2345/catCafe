@@ -1,7 +1,7 @@
 select * from tbl_user;
-select * from tbl_board;
-select * from attach;
-select * from tbl_reply;
+select * from tbl_cate;
+select * from tbl_subcate;
+select * from tbl_menu;
 select * from tbl_reaction where reaction_type='like';
 select * from tbl_reaction;
 
@@ -19,6 +19,9 @@ alter table tbl_reaction drop column reply_id;
 
 SELECT * FROM tbl_user LIMIT 10 OFFSET 0;
 
+delete from tbl_cate;
+delete from tbl_subcate;
+delete from tbl_menu;
 
 select * from tbl_board;
 select * from tbl_reply;
@@ -28,9 +31,9 @@ select * from maincate;
 delete from maincate;
 delete from tbl_reaction;
 
-
-drop table tbl_reply;
-drop table tbl_attach;
+drop table tbl_cate;
+drop table tbl_menu;
+drop table tbl_subcate;
 drop table tbl_board;
 drop table tbl_user;
 
