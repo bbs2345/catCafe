@@ -43,6 +43,5 @@ public class MainController {
 
 	@GetMapping("/index")
 	public void index() {
-		
 	}
 }
