@@ -6,14 +6,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import kr.co.mbc.entity.CateEntity;
+import kr.co.mbc.entity.MenuEntity;
 import kr.co.mbc.entity.UserEntity;
 import kr.co.mbc.service.CateService;
+import kr.co.mbc.service.MenuService;
 import kr.co.mbc.service.UserService;
 import lombok.RequiredArgsConstructor;
 
@@ -24,6 +27,26 @@ public class AdminController {
 
     private final UserService userService;
     private final CateService cateService;
+    private final MenuService menuService;
+    
+    // 메뉴이름 중복확인 
+    @GetMapping("/menu/check")
+    public ResponseEntity<Boolean> checkMenuName(@RequestParam String name) {
+        boolean check = menuService.checkMenuName(name);
+        return ResponseEntity.ok(check);
+    }
+    
+    // 메뉴 인서트 기능
+    @PostMapping("/menuInsert")
+    public String menuInsert(@ModelAttribute MenuEntity menuEntity, MultipartHttpServletRequest mRequest) {
+    	menuEntity.getSubcate();
+    	menuService.menuInsert(menuEntity,mRequest.getFile("myfile"));
+    	
+//    	MultipartFile multipartFile = mRequest.getFile("myfile");
+//    	menuService.menuInsert(menuEntity,multipartFile);
+    	
+        return "redirect:/admin/home";
+    }
 
     // 서브카테고리 중복확인 
     @GetMapping("/subcate/check")
@@ -42,7 +65,7 @@ public class AdminController {
     //서브카테고리 카테고리 cname으로 scname 목록조회
     @GetMapping("/subcate/names")
     @ResponseBody
-    public List<String> getSubCategoryNames(@RequestParam("cname") String cname) {
+    public List<String> getSubCateScnames(@RequestParam("cname") String cname) {
         return cateService.getSubCateScnamesByCate(cname);
     }
     

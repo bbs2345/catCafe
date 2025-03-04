@@ -4,6 +4,7 @@ select * from tbl_subcate;
 select * from tbl_menu;
 select * from tbl_reaction where reaction_type='like';
 select * from tbl_reaction;
+select * from tbl_attach
 
 SELECT * FROM user_tables WHERE table_name = 'tbl_user';
 
