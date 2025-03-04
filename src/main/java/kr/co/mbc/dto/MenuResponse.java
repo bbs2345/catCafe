@@ -1,6 +1,9 @@
 package kr.co.mbc.dto;
 
 
+import java.util.List;
+
+import kr.co.mbc.entity.AttachEntity;
 import kr.co.mbc.entity.SubCateEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,8 +21,9 @@ import lombok.ToString;
 public class MenuResponse {
 	private String name;
 	
-	private String price;
+	private int price;
 	private String text;
 	private String img;
 	private SubCateEntity subcate;
+	private List<AttachEntity>attachList;
 }

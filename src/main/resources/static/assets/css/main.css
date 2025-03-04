@@ -11,10 +11,11 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+/* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Satisfy",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+
+  --korean-font: "Hi Melody", sans-serif; /* 추가된 폰트 */
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -63,7 +64,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: var(--korean-font);
 }
 
 a {
@@ -84,7 +85,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--korean-font);
 }
 
 /* Pulsating Play Button
@@ -234,7 +235,7 @@ h6 {
 .header .topbar {
   background-color: var(--background-color);
   padding: 10px 0 0 0;
-  font-size: 14px;
+  font-size: 25px;
   transition: all 0.5s;
 }
 
@@ -253,7 +254,7 @@ h6 {
 
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
-    font-size: 13px;
+    font-size: 20px;
   }
 }
 
@@ -271,7 +272,7 @@ h6 {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 6px 30px 8px 30px;
@@ -298,7 +299,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -335,8 +336,8 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 14px;
-    font-family: var(--nav-font);
+    font-size: 25px;
+    font-family: var(--korean-font);
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -347,7 +348,7 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 25px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
@@ -385,13 +386,13 @@ h6 {
 
   .navmenu .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 22px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
 
   .navmenu .dropdown ul a i {
-    font-size: 12px;
+    font-size: 22px;
   }
 
   .navmenu .dropdown ul a:hover,
@@ -455,8 +456,8 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
-    font-size: 17px;
+    font-family: var(--korean-font);
+    font-size: 27px;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -467,7 +468,7 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 27px;
     line-height: 0;
     margin-left: 5px;
     width: 30px;
@@ -553,7 +554,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-size: 14px;
+  font-size: 22px;
   padding: 40px 0 0 0;
   position: relative;
 }
@@ -566,7 +567,7 @@ h6 {
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -583,7 +584,7 @@ h6 {
   height: 40px;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin-right: 10px;
   transition: 0.3s;
@@ -605,7 +606,7 @@ h6 {
 
 .footer .credits {
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -700,7 +701,7 @@ h6 {
 }
 
 .page-title .heading h1 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -715,7 +716,7 @@ h6 {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -760,7 +761,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 13px;
+  font-size: 22px;
   letter-spacing: 1px;
   font-weight: 700;
   padding: 8px 20px;
@@ -770,7 +771,7 @@ section,
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
-  font-family: var(--default-font);
+  font-family: var(--korean-font);
 }
 
 .section-title div {
@@ -778,7 +779,7 @@ section,
   margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: var(--korean-font);
 }
 
 .section-title div .description-title {
@@ -840,7 +841,7 @@ section,
 
 .hero h2 {
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   animation: fadeInDown 1s both;
 }
@@ -857,6 +858,7 @@ section,
 
 .hero p {
   animation: fadeInDown 1s both 0.2s;
+  font-size: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -864,13 +866,14 @@ section,
   .hero h2,
   .hero p {
     max-width: 60%;
+    
   }
 }
 
 .hero .btn-get-started {
   color: var(--contrast-color);
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 32px;
@@ -1006,7 +1009,7 @@ section,
   font-weight: 500;
   line-height: 1;
   transition: all ease-in-out 0.3s;
-  font-family: var(--heading-font);
+  font-family: var(--korean-font);
 }
 
 .menu .menu-filters li:hover,
@@ -1046,7 +1049,7 @@ section,
   top: -4px;
   z-index: 1;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: var(--korean-font);
 }
 
 .menu .menu-content a {
@@ -1076,7 +1079,7 @@ section,
   margin-left: 95px;
   font-style: italic;
   font-size: 14px;
-  font-family: var(--nav-font);
+  font-family: var(--korean-font);
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
@@ -1125,7 +1128,7 @@ section,
 
 .events .event-item .price {
   font-size: 26px;
-  font-family: var(--default-font);
+  font-family: var(--korean-font);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1290,7 +1293,7 @@ section,
   font-size: 16px;
   position: relative;
   padding-bottom: 10px;
-  font-family: var(--default-font);
+  font-family: var(--korean-font);
 }
 
 .chefs .member h4::after {

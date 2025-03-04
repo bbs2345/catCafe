@@ -4,6 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <c:set value="${pageContext.request.contextPath}" var="contextPath" />
 <c:set value="${pageContext.request.requestURI}" var="path"/>
+<link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+
 <!DOCTYPE html>
   <header id="header" class="header fixed-top">
 
